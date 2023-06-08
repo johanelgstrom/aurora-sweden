@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:wght@300&family=Raleway&display=swap");
+
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+div,
+section {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Playfair", serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  font-family: "Raleway", sans-serif;
+}
+
+section {
+  .m {
+    &-standard {
+      margin: 45px 0;
+
+      @include tablet {
+        margin: 55px 0;
+      }
+      @include desktop {
+        margin: 105px 0;
+      }
+    }
+    &-small {
+      margin: 35px 0;
+
+      @include tablet {
+        margin: 45px;
+      }
+
+      @include mdesktop {
+        margin: 95px 0;
+      }
+    }
+  }
+  .p {
+    &-standard {
+      padding: 45px 0;
+
+      @include tablet {
+        padding: 55px 0;
+      }
+      @include desktop {
+        padding: 105px 0;
+      }
+    }
+    &-small {
+      padding: 35px 0;
+
+      @include tablet {
+        padding: 45px;
+      }
+
+      @include mdesktop {
+        padding: 95px 0;
+      }
+    }
+  }
+}
+div {
+  .content {
+    &-full {
+      width: 100%;
+    }
+
+    &-wide {
+      width: 100%;
+      max-width: 1640px;
+      margin: 0 auto;
+    }
+
+    &-standard {
+      width: 100%;
+      max-width: 1380px;
+      margin: 0 auto;
+    }
+
+    &-small {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    &-mini {
+      width: 100%;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    &-wide,
+    &-standard,
+    &-small,
+    &-mini {
+      padding: 0 25px;
+
+      @include tablet {
+        padding: 0 30px;
+      }
+
+      @include desktop {
+        padding: 0 40px;
+      }
+    }
+  }
+}
